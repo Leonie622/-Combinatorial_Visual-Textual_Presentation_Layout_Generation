@@ -1,0 +1,10 @@
+1. Installation environment
+pip install -r requirements.txt
+
+2. Training model
+bart：bash run_bart.sh ，The trained results will be stored in the bart_out folder
+The t5 model and the pegasus model use the same approach
+
+3. 测试
+bart：bash bart_generate.sh
+The t5 model and the pegasus model use the same approach

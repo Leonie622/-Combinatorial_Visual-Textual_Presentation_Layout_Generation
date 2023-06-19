@@ -1,0 +1,19 @@
+python run.py \
+    --model_name_or_path pegasus_out \
+    --model_type pegasus \
+    --output_dir pegasus_out \
+    --do_eval \
+    --predict_with_generate \
+    --max_source_length 10 \
+    --max_target_length 303 \
+    --train_file train.json \
+    --validation_file test.json \
+    --per_device_train_batch_size=4 \
+    --per_device_eval_batch_size=4 \
+    --logging_steps 1 \
+    --save_steps 1000 \
+    --save_total_limit 1 \
+    --overwrite_output_dir \
+    --num_train_epochs 50 \
+    --text_column content \
+    --summary_column title \

@@ -1,0 +1,20 @@
+python run.py \
+    --model_name_or_path IDEA-CCNL/Randeng-BART-139M \
+    --model_type bart \
+    --output_dir bart_out \
+    --do_train \
+    --do_eval \
+    --predict_with_generate \
+    --max_source_length 10 \
+    --max_target_length 88 \
+    --train_file train.json \
+    --validation_file test.json \
+    --per_device_train_batch_size=8 \
+    --per_device_eval_batch_size=8 \
+    --logging_steps 1 \
+    --save_steps 1000 \
+    --save_total_limit 1 \
+    --overwrite_output_dir \
+    --num_train_epochs 50 \
+    --text_column content \
+    --summary_column title \

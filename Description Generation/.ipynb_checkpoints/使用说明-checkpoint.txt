@@ -1,0 +1,10 @@
+1. 安装依赖
+pip install -r requirements.txt
+
+2. 训练模型
+bart：bash run_bart.sh ，训练好的会存在bart_out目录下
+其他的t5和pegasus类似
+
+3. 测试
+bart：bash bart_generate.sh
+其他的t5和pegasus类似
